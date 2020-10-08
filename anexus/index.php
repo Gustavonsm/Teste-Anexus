@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-		<meta charset="utf-8"/>
-		<title>
-			Teste anexus
-		</title>
-		<link rel ="stylesheet" type="text/css" href="css/estilo.css">		
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Teste Anexus Network</title>
+	<link href="css/cover.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	</head>
-	<body>
-		<div class="teamplate">
-			<header>
-				<h1 class="borda">Rede de pontos de usuário</h1>
-			</header>
-			<main>
-				<div class="borda">						
-					<h1>Verificar pontos do usário</h1>
-				
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="inner cover">Rede de pontos do usuário</h3>
+      
+    </div>
+  </header>
 
-				<script type="text/javascript" src="script.js"></script>
+  <main role="main" class="inner cover">
+  	<form name="Cadastro" method="POST">
+    	<h1 class="cover-heading">Verificar pontos do usuário</h1>
+
+ 		<br><input name="btncalcular" type="submit" value="Calcular" class="btn btn-lg btn-secondary"><br><br>
+ 		<?php
+
+ 			$botao= filter_input(INPUT_POST, 'btncalcular' , FILTER_SANITIZE_STRING);
+
+ 			if($botao == "Calcular")
+ 			{
+				 $valor1 = 0;
+			     $valor2 = null;
+			     $valor3 = null;
+			     $value = null;	
 
 
-				<?php
+					
+				if($valor3 == null)
+				{
+					$valor3 = 100;
+				}
+				else
+				{
+					$value = $valor2;
+				}
+				if($valor2 == null)
+				{
+					$valor2 = 200;
+				}
+				else
+				{
+					$value = $valor3	;
+				}
+					
+				$total = $valor2 +$valor3;
 
-					 $valor1 = 0;
-				     $valor2 = null;
-				     $valor3 = null;
-				     $value = null;	
+				echo 'O Usuário um tem no total: '.$total.' Pontos
+						<br>Pontos do laddo esquerdo:  ' . $valor2 . 
+						'<br> Pontos do lado direito:  ' . $valor3 . 
+						'';	
+			}	
+		?>
+	</form>   
+  </main>
 
-
-						
-					if($valor3 == null)
-					{
-						$valor3 = 100;
-					}
-					else
-					{
-						$value = $valor2;
-					}
-					if($valor2 == null)
-					{
-						$valor2 = 200;
-					}
-					else
-					{
-						$value = $valor3	;
-					}
-						
-					$total = $valor2 +$valor3;
-
-					echo '<div class="texto"> O Usuário um tem no total: '.$total.' Pontos
-							<br>Pontos do laddo esquerdo:  ' . $valor2 . 
-							'<br> Pontos do lado direito:  ' . $valor3 . 
-							'</div>';		
-		
-				?>
-				</div>
-			</main>	
-			<aside>
-				
-				
-			</aside>
-			<footer>
-				<div class="borda">
-					<h3 class="rodape">Copyright  © - Todos os direitos reservados</h3>
-				</div>
-			</footer>
-		</div>
-	</body>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p class="rodape">Copyright  © - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</div>
+</body>
 </html>
