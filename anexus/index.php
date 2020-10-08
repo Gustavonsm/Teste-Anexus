@@ -30,7 +30,7 @@
     <link href="cover.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
       <h3 class="inner cover">Rede de pontos do usuário</h3>
@@ -40,7 +40,7 @@
 
   <main role="main" class="inner cover">
   	<form name="Cadastro" method="POST">
-    	<h1 class="cover-heading">Verificar pontos do usuário</h1>
+    	<h1>Verificar pontos do usuário</h1>
 
  		<br><input name="btncalcular" type="submit" value="Calcular" class="btn btn-lg btn-secondary"><br><br>
  		<?php
@@ -75,19 +75,18 @@
 					
 				$total = $valor2 +$valor3;
 
-				echo 'O Usuário um tem no total: '.$total.' Pontos
-						<br>Pontos do laddo esquerdo:  ' . $valor2 . 
-						'<br> Pontos do lado direito:  ' . $valor3 . 
-						'';	
+				echo '<center><table>
+        <tr><td>O Usuário um tem no total:</td><td> '.$total.'</td></tr>
+						<tr><td>Pontos do laddo esquerdo: </td><td> ' . $valor2 .  '</td></tr> 
+            <tr> <td>Pontos do lado direito:</td> <td> ' . $valor3 .'</td></tr>
+            </table></center>';	
 			}	
 		?>
 	</form>   
   </main>
 
   <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p class="rodape">Copyright  © - Todos os direitos reservados</p>
-    </div>
+      <p>Copyright  © - Gustavo Nogueira</p>
   </footer>
 </div>
 </body>
