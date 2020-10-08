@@ -1,0 +1,84 @@
+body {
+	margin: 0px;
+}
+
+table {
+
+	padding: 2%;
+	background-color: #686868;
+	box-shadow: 3px 3px 10px #2E2E2E;
+
+}
+table, td {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+
+}
+input{
+	border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+}
+
+#logo{
+	float:left;
+	padding-left: 3%;
+}
+
+.borda{
+	padding-left: 3%;
+}
+
+.rodape{
+	font-family: Arial;
+	font-size: 15px;	
+}
+.texto{
+	font-family: Arial;
+	font-size: 16px;
+}
+.botao{
+	box-shadow: 2px 2px 20px #2E2E2E;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+h1 {
+	border-radius: 5px;
+	font-family: Arial;
+	font-size: 25px;
+}
+
+.teamplate{
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	grid-template-rows:  10vh 82vh 8vh; 
+	grid-template-areas: "header header"
+							"main aside"
+							"footer footer";
+}
+
+header {
+	background-color: #686868;
+	grid-area: header;
+}
+
+main {
+	
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	background-color: #686868;
+	grid-area: footer;
+}
+
+@media{
+	
+}
+
