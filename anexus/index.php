@@ -76,7 +76,7 @@
           $total = $usuario2 +$usuario3;
 
           echo '<center><table>
-          <tr><td><h5 style="color: black;">O Usuário um tem no total:</h5></td><td><h5 style="color: black;"> '.$total.'</h5></td></tr> 
+          <tr><td><h5 style="color: black;">O Usuário 1 tem no total:</h5></td><td><h5 style="color: black;"> '.$total.'</h5></td></tr> 
           <tr> <td><h5 style="color: black;">Pontos do Usuário 2:</h5></td> <td> <h5 style="color: black;">' . $usuario2 .'</h5></td></tr>
               <tr> <td><h5 style="color: black;">Pontos do Usuário 3:</h5> </td> <td><h5 style="color: black;"> ' . $usuario3 .'</h5></td></tr>
               <tr><td></td><td></td></tr>
