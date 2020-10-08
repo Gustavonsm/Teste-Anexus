@@ -81,7 +81,7 @@
               <tr> <td><h5 style="color: black;">Pontos do Usuário 3:</h5> </td> <td><h5 style="color: black;"> ' . $usuario3 .'</h5></td></tr>
               <tr><td></td><td></td></tr>
               <tr><td></td><td></td></tr>
-              <tr><td><h5>Pontos do laddo esquerdo:</h5></td><td><h5> ' . $valoresquerdo .  '</h5></td></tr> 
+              <tr><td><h5>Pontos do lado esquerdo:</h5></td><td><h5> ' . $valoresquerdo .  '</h5></td></tr> 
               <tr><td><h5>Pontos do lado direito:</h5></td> <td> <h5>' . $valordireito .'</h5></td></tr>
              
               </table></center>'; 
